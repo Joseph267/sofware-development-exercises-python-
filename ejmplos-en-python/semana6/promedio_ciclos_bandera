@@ -1,0 +1,21 @@
+#Inicializacion 
+cantNumeros = 0
+numero = 0
+sumaTotal = 0
+promedio = 0
+contNumeros = 1
+bandera = True
+respuesta =''
+#Entradas
+while(bandera):
+ numero = int(input('Digite el número: '))
+ sumaTotal+=numero # sumaTotal = sumaTotal + numero
+ respuesta = input('Desea continuar (S)-(N): ')
+ cantNumeros+=1    
+ if(respuesta == 'N' or respuesta == 'n'):
+    bandera = False
+ if numero >= 1000:
+    print(numero)
+ 
+#Salida
+print('El promedio es:', sumaTotal/cantNumeros)
